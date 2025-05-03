@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDxyIxEnP2FOZT+IyyULUOVRvn+d8ZYwGlnpahU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 70px; /* Ajustar para la navbar */
+        }
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi App Segura</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <span class="navbar-text me-3">Bienvenido, {{ username }}</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger btn-sm text-white" href="{{ url_for('logout') }}">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title mb-4">Panel de Usuario</h1>
+                <p class="card-text"><strong>ID de Usuario:</strong> {{ current_user.id }}</p>
+                <p class="card-text"><strong>Nombre de Usuario:</strong> {{ current_user.StrUsuario }}</p>
+                <p class="card-text"><strong>Rol de Acceso:</strong> {{ current_user.StrRol }}</p>
+                <hr class="my-4">
+                <p><strong>Posibles Credenciales (para pruebas):</strong></p>
+                <ul>
+                    <li><strong>Usuario:</strong> admin, <strong>Contraseña:</strong> adminpassword (Rol: admin)</li>
+                    <li><strong>Usuario:</strong> testuser, <strong>Contraseña:</strong> testpassword (Rol: usuario)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Yt+3nXDg9uCQjzjH/Z4yFfPlWy6z3zF7z5jyq9mPd+lYFfH+ILHI6m6JWpMnE/z6WfFvFlsnC" crossorigin="anonymous"></script>
+
+</body>
+</html>

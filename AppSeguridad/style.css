@@ -1,0 +1,109 @@
+/* static/css/style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Una fuente moderna */
+    background-color: #e9ecef; /* Un gris claro de fondo */
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.login-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Una sombra sutil */
+    border-radius: 12px; /* Bordes más redondeados */
+    overflow: hidden; /* Para que los bordes redondeados funcionen con el fondo */
+}
+
+.login-container .card-body {
+    padding: 30px;
+}
+
+.login-container .card-title {
+    color: #007bff; /* Azul primario de Bootstrap */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.login-container .form-label {
+    font-weight: 500; /* Un poco más de peso para las etiquetas */
+    color: #495057; /* Gris oscuro de Bootstrap */
+}
+
+.login-container .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da; /* Borde estándar de Bootstrap */
+}
+
+.login-container .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.login-container .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.login-container .alert-danger {
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para la página principal */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #28a745; /* Verde éxito de Bootstrap */
+}
+
+.navbar-text {
+    color: #495057;
+    font-weight: 500;
+}
+
+.container .card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.container .card-title {
+    color: #28a745; /* Verde éxito de Bootstrap */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.container .card-text {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.container hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container ul li {
+    margin-bottom: 8px;
+}
+
+.container strong {
+    font-weight: 600;
+}
+
+.container .btn-danger {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+/* Puedes agregar más estilos personalizados aquí */
